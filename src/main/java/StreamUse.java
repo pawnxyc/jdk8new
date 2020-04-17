@@ -5,8 +5,8 @@ import java.util.stream.Collectors;
 public class StreamUse {
 
     public static void main(String[] args) {
-//用stream流的方式来处理集合
-        List<String> list = Arrays.asList(new String[]{"james","curry","harden1111","hamerose"});
+//用stream流的方式来处理集合,流是jdk8配合lambda表达式的增强集合数据处理的方式，
+        List<String> list = Arrays.asList("james","curry","harden1111","hamerose","hhhhxd");
         List<String> players = list.stream().
                 filter(s->s.startsWith("h")).
                 map(String::toUpperCase).
