@@ -9,7 +9,7 @@ public class StreamUse {
         List<String> list = Arrays.asList("james","curry","harden1111","hamerose","hhhhxd");
         List<String> players = list.stream().
                 filter(s->s.startsWith("h")).
-                map(String::toUpperCase).
+                map(String::toUpperCase).//每一个value来调方法。
                 sorted().
                 collect(Collectors.toList());
 
